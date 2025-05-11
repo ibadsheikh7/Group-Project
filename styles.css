@@ -1,0 +1,320 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  background-color: #67aaf9;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li:first-child {
+  margin-left: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 3px;
+  font-size: 0.9em;
+  transition: border-bottom 0.3s ease;
+}
+
+.nav-links a:hover {
+  border-bottom: 2px solid black;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 80px 20px;
+  gap: 40px;
+}
+
+.hero-left {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-right {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-right img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+
+.hero-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.hero-paragraph {
+  font-size: 1.1em;
+  color: black;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button {
+  background-color: blue;
+  color: white;
+}
+
+.secondary-button {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+
+.primary-button:hover {
+  background-color: darkblue;
+}
+
+.secondary-button:hover {
+  background-color: #ddd;
+}
+
+.pricing-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.pricing-heading {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.pricing-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.pricing-box {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-box h3 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 2.5em;
+  color: blue;
+  margin-bottom: 5px;
+}
+
+.starting-from {
+  color: #777;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+}
+
+.pricing-box ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.pricing-box ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.pricing-box ul li:last-child {
+  border-bottom: none;
+}
+
+.select-plan {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.select-plan:hover {
+  background-color: darkblue;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left,
+  .hero-right {
+    flex: 0 0 auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-right img {
+    max-height: 200px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .pricing-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-box {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+.contact-info {
+  background-color: #81b7f5;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  text-align: left;
+  border-top: 1px solid #eee;
+}
+
+.contact-info h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.contact-info h3 {
+  color: #0f0f0f;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.contact-info p {
+  color: #141414;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: blue;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  padding: 5px 0;
+}
+
+.contact-info ul li a {
+  color: #0c0c0c;
+  text-decoration: none;
+}
+
+.contact-info ul li a:hover {
+  color: rgb(13, 13, 14);
+}
+
+.contact-left {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 768px) {
+  .contact-left {
+    grid-column: 1 / 2;
+  }
+  .contact-middle {
+    grid-column: 2 / 3;
+  }
+  .contact-right {
+    grid-column: 3 / 4;
+  }
+  .contact-bottom {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 30px;
+  }
+}

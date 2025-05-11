@@ -1,0 +1,281 @@
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #3716c7;
+    color: #080808;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 auto;
+
+}
+
+.navbar {
+    background-color: #67aaf9;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .nav-links li {
+    margin-left: 20px;
+  }
+
+  .nav-links li:first-child {
+    margin-left: 0;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 3px;
+    font-size: 0.9em;
+    transition: border-bottom 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    border-bottom: 2px solid black;
+  }
+
+.hero {
+    background-color: rgb(255, 255, 255);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero .container {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #24292e;
+}
+
+.hero p {
+    font-size: 1.1em;
+    color: #586069;
+    line-height: 1.8;
+}
+
+ .company-overview {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.company-overview h2 {
+    font-size: 2.4em;
+    margin-bottom: 30px;
+    color: blue; 
+    text-align: center;
+}
+
+.company-overview p {
+    color: #586069;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+
+.our-team {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.our-team h2 {
+    font-size: 2.4em;
+    margin-bottom: 30px;
+    color: blue; /* Changed to blue */
+}
+
+.our-team p {
+    color: #586069;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.our-team .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    postion right: display: 10px;
+}
+
+.our-team .team-member {
+    width: 200px;
+    text-align: center;
+}
+
+.our-team .team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.our-team .team-member h3 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    color: #24292e;
+}
+
+.our-team .team-member p {
+    font-size: 0.95em;
+    color: #586069;
+}
+
+/* Our Values */
+.our-values {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.our-values h2 {
+    font-size: 2.4em;
+    margin-bottom: 30px;
+    color: blue; /* Changed to blue */
+    text-align: center;
+}
+
+.our-values p {
+    color: #586069;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.our-values .value-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.our-values .value-item {
+    width: 250px;
+    text-align: center;
+}
+
+.our-values .value-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #24292e;
+}
+
+.our-values .value-item p {
+    font-size: 1em;
+    color: #586069;
+}
+
+/* Call to Action */
+.call-to-action {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.call-to-action h2 {
+    font-size: 2.6em;
+    margin-bottom: 20px;
+    color: blue; /* Changed to blue */
+}
+
+.call-to-action p {
+    font-size: 1.15em;
+    color: #586069;
+    margin-bottom: 30px;
+}
+
+.call-to-action .cta-button {
+    display: inline-block;
+    background-color: #28a745; /* Green button */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action .cta-button:hover {
+    background-color: #22863a;
+}
+
+/* Footer */
+footer {
+    background-color: #24292e;
+    color: #ccc;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9em;
+}
+
+footer .container {
+    max-width: 800px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .logo {
+        margin-bottom: 15px;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .our-team .team-members,
+    .our-values .value-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-team .team-member,
+    .our-values .value-item {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .call-to-action h2 {
+        font-size: 2.2em;
+    }
+}
